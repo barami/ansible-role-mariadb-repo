@@ -1,0 +1,18 @@
+---
+- name: Install apt key for mariadb
+  apt_key:
+    url: '{{ mariadb_key }}'
+    state: present
+  when:
+    - ansible_distribution == 'Debian'
+    - mariadb_repo | length > 0
+    - mariadb_key | length > 0
+
+- name: Configure apt repository for mariadb
+  apt_repository:
+    repo: 'deb {{ mariadb_repo }} {{ ansible_distribution_release }} main'
+    state: present
+    filename: mariadb
+  when:
+    - ansible_distribution == 'Debian'
+    - mariadb_repo | length > 0

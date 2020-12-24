@@ -1,0 +1,3 @@
+---
+mariadb_repo: 'https://mirror.rackspace.com/mariadb/repo/10.5/debian'
+mariadb_key: 'https://mariadb.org/mariadb_release_signing_key.asc'
