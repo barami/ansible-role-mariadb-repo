@@ -6,9 +6,9 @@ Setup apt repository for mariadb
 Role Variables
 --------------
 
-mariadb_debian_repo
-mariadb_ubuntu_repo
-mariadb_key
+mariadb_debian_repo\
+mariadb_ubuntu_repo\
+mariadb_key\
 
 License & Author
 -------
