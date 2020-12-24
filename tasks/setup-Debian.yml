@@ -1,4 +1,5 @@
 ---
+- 
 - name: Install a gnupg package.
   apt:
     name: gnupg
@@ -9,13 +10,13 @@
     url: '{{ mariadb_key }}'
     state: present
   when:
-    - mariadb_repo | length > 0
+    - mariadb_debian_repo | length > 0
     - mariadb_key | length > 0
 
 - name: Configure apt repository.
   apt_repository:
-    repo: 'deb {{ mariadb_repo }} {{ ansible_distribution_release }} main'
+    repo: 'deb {{ mariadb_debian_repo }} {{ ansible_distribution_release }} main'
     state: present
     filename: mariadb
   when:
-    - mariadb_repo | length > 0
+    - mariadb_debian_repo | length > 0
