@@ -1,4 +1,9 @@
 ---
+- name: Install gnupg package which is required by apt
+  apt:
+    name: gnupg
+    state: present
+
 - name: Install apt key for mariadb
   apt_key:
     url: '{{ mariadb_key }}'
