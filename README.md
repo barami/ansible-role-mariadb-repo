@@ -12,5 +12,5 @@ mariadb_key
 License & Author
 -------
 
-Author: barami
+Author: barami\
 License: BSD License 2.0 (BSD 3-Clause)
