@@ -9,7 +9,7 @@ Role Variables
 mariadb_release\
 mariadb_debian_repo\
 mariadb_ubuntu_repo\
-mariadb_key
+mariadb_apt_key
 
 License & Author
 -------

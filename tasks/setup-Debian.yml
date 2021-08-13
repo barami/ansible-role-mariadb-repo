@@ -7,11 +7,11 @@
 
 - name: Import an apt key.
   apt_key:
-    url: '{{ mariadb_key }}'
+    url: '{{ mariadb_apt_key }}'
     state: present
   when:
     - mariadb_debian_repo | length > 0
-    - mariadb_key | length > 0
+    - mariadb_apt_key | length > 0
 
 - name: Configure apt repository.
   apt_repository:

@@ -2,4 +2,4 @@
 mariadb_release: '10.6'
 mariadb_debian_repo: 'https://mirror.rackspace.com/mariadb/repo/{{ mariadb_release }}/debian'
 mariadb_ubuntu_repo: 'https://mirror.rackspace.com/mariadb/repo/{{ mariadb_release }}/ubuntu'
-mariadb_key: 'https://mariadb.org/mariadb_release_signing_key.asc'
+mariadb_apt_key: 'https://mariadb.org/mariadb_release_signing_key.asc'
